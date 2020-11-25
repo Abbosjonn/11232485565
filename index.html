@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <form action="#">
+        <h2>Reservation Request</h2>
+        <fieldset class="firsy-fieldset">
+          <legend>General Information</legend>
+          <div class="general">
+            <label class="general-information " for="date">Arrival date</label>
+            <input class="general-information-input general-information-input-2" id="date" type="date" name="" required>
+          </div>
+          <div class="general">
+            <label class="general-information" for="nights">Nights</label>
+            <input class="general-information-input general-information-input-1" id="nights" type="number" required>
+          </div>
+          <div class="general">
+            <label class="general-information" for="adults">Adults</label>
+            <input class="general-information-input" id="adults" type="number" required>
+          </div>
+          <div class="general">
+            <label class="general-information" for="children">Children</label>
+            <input class="general-information-input" id="children" type="number" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <div class="room-type">
+            <label for="room" class="preference-label">Room type:</label>
+            <input class="preference-input sbsb" disabled type="radio" id="room" required>Standart</input>
+            <input class="preference-input" disabled type="radio" id="room" required>Business</input>
+            <input class="preference-input" disabled type="radio" id="room" required>Suite</input>
+          </div>
+          <div class="bed-type">
+            <label for="bed-type" class="preference-label">Bed type:</label>
+            <input class="preference-input ssss" disabled type="radio" id="bed-type" required>King</input>
+            <input class="preference-input dddd" disabled type="radio" id="bed-type" required>Double</input>
+          </div>
+          <div>
+            <input type="checkbox" class="smoking">Smoking</input>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" minlength="5">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email">
+          </div>
+          <div>
+            <label for="number">Phone:</label>
+            <input id="number" type="number" class="phone-number">
+          </div>
+        </fieldset>
+
+        <button type="submit" class="same-buttons">Submit Reservation</button>
+        <button type="reset" class="same-buttons">Clear</button>
+
+      </form>
+    </div>
+</body>
+</html>
